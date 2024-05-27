@@ -81,7 +81,7 @@ const Leaderboard = () => {
         <nav
           className={`${
             menuOpen ? "block" : "hidden"
-          } md:flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0`}
+          } md:flex md:flex-wrap md:justify-center flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0`}
         >
           {navLinks.map((link, index) => (
             <a
@@ -114,7 +114,7 @@ const Leaderboard = () => {
           </div>
         </div>
         <div className="overflow-x-auto p-4 bg-white shadow-md rounded-lg">
-          <div className="flex justify-between items-center mb-4">
+          <div className="max-sm:flex-col justify-between items-center mb-4 md:flex">
             <div className="text-3xl font-semibold">Basic Backtest</div>
             <div className="relative">
               <button className="p-2 border border-gray-300 rounded-l-md bg-gray-200 border-r-0">
